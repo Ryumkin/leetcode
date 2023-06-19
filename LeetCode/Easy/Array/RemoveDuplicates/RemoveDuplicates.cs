@@ -1,4 +1,4 @@
-﻿public class Solution {
+﻿public sealed class RemoveDuplicatesSolution {
     public int RemoveDuplicates(int[] nums)
     {
         if (nums.Length == 1)
