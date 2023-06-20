@@ -1,4 +1,4 @@
-﻿public class Solution {
+﻿public class RotateArray {
     public void Rotate(int[] nums, int k) {
         if(k==0)
             return;
