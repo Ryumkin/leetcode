@@ -1,4 +1,4 @@
-﻿public class Solution {
+﻿public class SingleNumberSln {
     public int SingleNumber(int[] nums) {
         var hashset = new HashSet<int>(nums.Length);
         foreach(var item in nums){
