@@ -1,2 +1,2 @@
 ﻿
-Console.Write(new Solution().ContainsDuplicate(new int[] {5, 4, 3, 2, 1,5}));
+Console.Write(new TwiSumSln().TwoSum(new int[] {2,7,11,15}, 9));
