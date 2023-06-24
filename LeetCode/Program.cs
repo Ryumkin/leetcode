@@ -1,2 +1,2 @@
 ﻿
-Console.Write(new ValidSudokuSln().IsValidSudoku(new int[] {2,7,11,15}, 9));
+Console.Write(new ReverseIntegerSln().Reverse(1534236469 ));
