@@ -1,2 +1,2 @@
 ﻿
-Console.Write(new ReverseIntegerSln().Reverse(1534236469 ));
+Console.Write(new IsAnagramSln().IsAnagram("car", "rat"));

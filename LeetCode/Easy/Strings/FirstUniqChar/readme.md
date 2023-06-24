@@ -1,27 +1,28 @@
-# Reverse Integer
-Given a signed 32-bit integer x, return x with its digits reversed. If reversing x causes the value to go outside the signed 32-bit integer range [-231, 231 - 1], then return 0.
+# First Unique Character in a String
 
-Assume the environment does not allow you to store 64-bit integers (signed or unsigned).
+Solution
+Given a string s, find the first non-repeating character in it and return its index. If it does not exist, return -1.
 
 
 
 Example 1:
 ```
-Input: x = 123
-Output: 321
+Input: s = "leetcode"
+Output: 0
 ```
 Example 2:
 ```
-Input: x = -123
-Output: -321
+Input: s = "loveleetcode"
+Output: 2
 ```
 Example 3:
 ```
-Input: x = 120
-Output: 21
+Input: s = "aabb"
+Output: -1
 ```
 
 Constraints:
 ```
--231 <= x <= 231 - 1
+1 <= s.length <= 105
+s consists of only lowercase English letters.
 ```
