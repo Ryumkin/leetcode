@@ -1,2 +1,2 @@
 ﻿
-Console.Write(new IsAnagramSln().IsAnagram("car", "rat"));
+Console.Write(new MyAtoiSln().MyAtoi("-2147483647"));
