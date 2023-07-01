@@ -30,30 +30,66 @@ public class StrStrSolution {
     }
     
     //longest prefix suffix portions
-    public int LPS(string haystack, string needle) {
+    public int[]? LPS(string haystack, string needle) {
         if (haystack.Length < needle.Length)
         {
-            return -1;
+            return null;
         }
-        
+
+        var lps = new int[needle.Length];
+        var previousLps = 0;
+        var i = 1;
+
+        while (i < needle.Length)
+        {
+            if (needle[i] == needle[previousLps])
+            {
+                lps[i++] = ++previousLps;
+            }
+            else if (previousLps == 0)
+            {
+                lps[i++] = 0;
+            } else
+            {
+                previousLps = lps[previousLps - 1];
+            }
+        }
+
+        return lps;
     }
     
     // O(M + N) Knuth–Morris–Pratt KMP 
     //  https://www.youtube.com/watch?v=JoF0Z7nVSrA
-    public int StrStr(string haystack, string needle) {
+    public int StrStr(string haystack, string needle)
+    {
 
-        if (needle == string.Empty)
+        var lps = LPS(haystack, needle) ?? new int[needle.Length];
+        var i = 0;
+        var j = 0;
+
+        while (i < haystack.Length)
         {
-            return 0;
-        }
-        
-        if (haystack.Length < needle.Length)
-        {
-            return -1;
+            if (haystack[i] == needle[j])
+            {
+                i++;
+                j++;
+            }
+            else
+            {
+                if (j == 0)
+                {
+                    i++;
+                }
+                else
+                {
+                    j = lps[j - 1];
+                }
+            }
+
+            if (j == needle.Length)
+                return i - needle.Length;
         }
 
-        var lps = new int[needle.Length];
-        
-        var previousLPS = 0, i = 0, 
+        return -1;
     }
 }
