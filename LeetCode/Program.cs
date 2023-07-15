@@ -1,2 +1,2 @@
 ﻿
-Console.Write(new MyAtoiSln().MyAtoi("-2147483647"));
+Console.Write(new MyAtoiSln().MyAtoi(new int[]));
