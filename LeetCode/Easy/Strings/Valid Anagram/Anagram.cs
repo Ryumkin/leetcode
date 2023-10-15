@@ -1,6 +1,4 @@
-﻿using System.Runtime.InteropServices;
-
-public class IsAnagramSln {
+﻿public class IsAnagramSln {
     public bool IsAnagram(string s, string t) {
         if (s.Length != t.Length)
         {
