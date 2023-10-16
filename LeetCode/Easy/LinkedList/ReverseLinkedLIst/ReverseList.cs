@@ -9,11 +9,11 @@ public class ReverseListSln {
     
     public ListNode ReverseList(ListNode head)
     {
-        ListNode previous = null, next = null;
+        ListNode previous = null;
 
         while (head != null)
         {
-            next = head.next;
+            var next = head.next;
             head.next = previous;
             previous = head;
             head = next;
