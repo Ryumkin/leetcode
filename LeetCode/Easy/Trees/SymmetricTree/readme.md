@@ -1,18 +1,21 @@
-#  Validate Binary Search Tree
-Given a binary tree, determine if it is a valid binary search tree (BST).
+#  Symmetric Tree
+Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
 
-Assume a BST is defined as follows:
-
-The left subtree of a node contains only nodes with keys less than the node's key.
-The right subtree of a node contains only nodes with keys greater than the node's key.
-Both the left and right subtrees must also be binary search trees.
-
-
+For example, this binary tree is symmetric:
 ```
-Input:
-2
+ 1
 / \
-1   3
-Output: true
+2   2
+/ \ / \
+3  4 4  3
+
+```
+But the following is not:
 ```
 
+ 1
+/ \
+2   2
+\   \
+3    3
+```
